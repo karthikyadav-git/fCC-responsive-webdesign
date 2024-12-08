@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">A survey of common hobbies of common people</p>
+  <form id="survey-form">
+    <fieldset class="details">
+      <label id="name-label" for="name">Name: <input type="text" name="name" id="name" placeholder="Your name..."
+          required></label>
+      <label id="email-label" for="email">Email: <input type="email" name="email" id="email" placeholder="Your email..."
+          required></label>
+      <label id="number-label" for="number">Age (Number only): <input type="number" id="number" name="age" min="13"
+          max="120" placeholder="eg. 25" required></label>
+    </fieldset>
+    <fieldset class="inline">
+      <p>What is your gender?</p>
+      <label for="male"><input type="radio" id="male" name="gender" value="male" checked>Male</label>
+      <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+    </fieldset>
+    <fieldset>
+      <p>What is your nationality?</p>
+      <select id="dropdown" name="nationality">
+        <option>(Your nationality...)</option>
+        <option value="nepali">Nepali</option>
+        <option value="indian">Indian</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    <fieldset class="inline">
+      <p>Select all your hobbies:</p>
+      <label for="reading"><input type="checkbox" id="reading" name="hobbies" value="reading">Reading</label>
+      <label for="cycling"><input type="checkbox" id="cycling" name="hobbies" value="cycling">Cycling</label>
+      <label for="hiking"><input type="checkbox" id="hiking" name="hobbies" value="hiking">Hiking</label>
+      <label for="writing"><input type="checkbox" id="writing" name="hobbies" value="writing">Writing</label>
+      <label for="cooking"><input type="checkbox" id="cooking" name="hobbies" value="cooking">Cooking</label>
+    </fieldset>
+    <fieldset>
+      <label for="remarks">Remarks:<textarea id="remarks" placeholder="Your remarks..."></textarea></label>
+    </fieldset>
+    <button type="submit" id="submit" value="Submit">Submit</button>
+  </form>
+</body>
+
+</html>
