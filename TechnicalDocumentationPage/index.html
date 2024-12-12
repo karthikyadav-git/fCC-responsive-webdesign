@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/components/codeblock.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Python Doc</header>
+    <div class="nav-links">
+      <a class="nav-link" href="#introduction">
+        Introduction
+      </a>
+      <a class="nav-link" href="#variables">
+        Variables
+      </a>
+      <a class="nav-link" href="#function">
+        Function
+      </a>
+      <a class="nav-link" href="#class">
+        Class
+      </a>
+      <a class="nav-link" href="#module">
+        Module
+      </a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.
+      </p>
+      <p>These are some of the reasons people who use Python would rather not use anything else.</p>
+    </section>
+    <section class="main-section" id="variables">
+      <header>Variables</header>
+      <p>In <b>Python Programming Language</b>, there are three types of variables. The variable types used in Python
+        are:</p>
+      <ul>
+        <li>String</li>
+        <li>Integer</li>
+        <li>Float</li>
+      </ul>
+      <ol>
+        <li>String</li>
+        <p class="description">In Python, any text - whether it be a word or a sentence or a complete paragraph - is a
+          <b><i>string</i></b>.
+        </p>
+        <li>Integer</li>
+        <p class="description">In Python, a number without a decimal point in between is an <b><i>integer</i></b>.</p>
+        <li>Float</li>
+        <p class="description">A number with decimal point in between is a <b><i>float</i></b>.</p>
+      </ol>
+    </section>
+    <section class="main-section" id="function">
+      <header>Function</header>
+      <p>Function is the main feature of a modular programming language. A program can be divded into multiple different
+        functions where each function has only one job.</p>
+      <p>A function can be defined by following syntax:</p>
+      <div class="codespace">
+        <code><b>def</b> <i>function_name</i>(parameters):<br><p class="indent">__code here__</p><p class="indent"><b>return</b> variable</p></code>
+      </div>
+      <p>Syntax for calling function is:</p>
+      <div class="codespace">
+        <code>variable = <i>function_name(arguments)</i></code>
+      </div>
+    </section>
+    <section class="main-section" id="class">
+      <header>Class</header>
+      <p>Python is an <i>Object Oriented Programming Language</i>. So, we use classes. A class is used if we have to
+        define any real world object.</p>
+      <p>A class can be define with the following syntax:</p>
+      <div class="codespace">
+        <code><b>class</b> <i>ClassName:</i><p class="indent"><b>def </b><i>__init__(self, other parameters):</i></p><p class="double-indent">__code here__</p><br><p class="indent"><b>def </b><i>method_name(parameters):</i></p><p class="double-indent">__code here__<br><b>return</b> variable</p></code>
+      </div>
+      <p>Syntax for initializing a class:</p>
+      <div class="codespace">
+        <code>class_variable = <i>class_name(arguments)</i></code><br><code>variable = <i>class_variable.method_name(arguments)</i></code>
+      </div>
+    </section>
+    <section class="main-section" id="module">
+      <header>Module</header>
+      <p>Python is a modular programming language. This means that we can break a single program into various modules.
+        We can also use the same modules in many different programs.</p>
+      <p>A module is a Python file which has only functions and classes. Modules are also saved in <i>.py</i>
+        file.</code></p>
+      <p>To use a module in our program, we need to import the module in our main file.</p>
+
+      <div class="codespace"><code><b>from</b> <i>module_file_name</i> <b>import</b> <i>function_name</i></code></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
